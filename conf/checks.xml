@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+  "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
+  "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+<module name="Checker">
+  <!--
+     FileSetCheck TreeWalker checks individual Java source files and defines
+     properties that are applicable to checking such files.
+   -->
+  <module name="TreeWalker">
+    <!-- Force usage of the Java 7 diamond operator -->
+    <module name="org.candlepin.checks.DiamondOperatorForVariableDefinitionCheck" />
+  </module>
+</module>
